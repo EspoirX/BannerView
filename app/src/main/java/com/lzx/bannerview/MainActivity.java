@@ -2,7 +2,6 @@ package com.lzx.bannerview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -29,9 +28,6 @@ public class MainActivity extends AppCompatActivity {
                 "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514192006291&di=55e555fe0371ab049fe1f16674db776e&imgtype=0&src=http%3A%2F%2Fimg.tupianzj.com%2Fuploads%2Fallimg%2F160519%2F9-160519202315.jpg"
         };
         mBannerView
-                .delayTime(3)
-                .setPointsGravity(Gravity.RIGHT)
-                .setPointsMargin(0, 0, 20, 0)
                 .build(Arrays.asList(array), new BannerView.ViewHolderCreator<String>() {
 
                     @Override

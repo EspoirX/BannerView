@@ -1,6 +1,25 @@
-# bannerView
+# BannerView
 
 一个简单封装的BannerView
+
+#### Demo 截图：
+<a href="art/image1.png"><img src="art/image1.png" width="30%"/></a>
+<a href="art/image2.png"><img src="art/image2.png" width="30%"/></a>
+
+#### 引用：
+```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+       compile 'com.github.lizixian18:bannerView:v1.0'
+}
+```
+[![](https://jitpack.io/v/lizixian18/bannerView.svg)](https://jitpack.io/#lizixian18/bannerView)
 
 #### 用法：
 ```java 
@@ -25,18 +44,17 @@ mBannerView
 
 #### Api:
 ```java
-delayTime(int time)  设置轮播时间，单位秒，默认是5秒
-setPointsRes(int selectRes, int unSelectRes)  设置下标drawable资源，选中和没选中两种状态
-setPointsParams(LinearLayout.LayoutParams paramsNormal, LinearLayout.LayoutParams paramsSelect) 设置下标资源的LayoutParams
-setPointsGravity(int gravity) 设置下标的位置，有三种：Gravity.LEFT，Gravity.CENTER，Gravity.RIGHT
-setPointsMargin(int leftMargin, int topMargin, int rightMargin, int bottomMargin) 设置下标的边距
-setOnItemClickListener(ViewPagerOnItemClickListener mViewPagerOnItemClickListener) 设置点击事件
-setPageChangeListener(onPageChangeListener pageChangeListener) 监听当前到第几页
+1. delayTime(int time)  设置轮播时间，单位秒，默认是5秒
+2. setPointsRes(int selectRes, int unSelectRes)  设置下标drawable资源，选中和没选中两种状态
+3. setPointsParams(LinearLayout.LayoutParams paramsNormal, LinearLayout.LayoutParams paramsSelect) 设置下标资源的LayoutParams
+4. setPointsGravity(int gravity) 设置下标的位置，有三种：Gravity.LEFT，Gravity.CENTER，Gravity.RIGHT
+5. setPointsMargin(int leftMargin, int topMargin, int rightMargin, int bottomMargin) 设置下标的边距
+6. setOnItemClickListener(ViewPagerOnItemClickListener mViewPagerOnItemClickListener) 设置点击事件
+7. setPageChangeListener(onPageChangeListener pageChangeListener) 监听当前到第几页
 ```
 
-
 #### About me
-An android developer in GuangZhou  
+An android developer in GuangZhou
 简书：[http://www.jianshu.com/users/286f9ad9c417/latest_articles](http://www.jianshu.com/users/286f9ad9c417/latest_articles)   
 Email:386707112@qq.com  
 If you want to make friends with me, You can give me a Email and follow me。
